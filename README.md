@@ -10,6 +10,7 @@ This project was built to predominantly allow my kids to play music, using simpl
 4. [Installation/Build](#installationbuild)
 5. [Setup](#setup)
 6. [Usage](#usage)
+7. [RFID Cards](#rfid-cards)
 7. [References](#references)
 
 ## Repository File Structure
@@ -68,9 +69,16 @@ By this point, you should have compiled the firmware and uploaded it to the Node
 *Note: If you use an Android phone to connect to the ESP8266, you might find you have trouble connecting due to inconsistent support for mDNS in Android phones. As a workaround, try connecting using the IP address of the device which you can find using your Router or using an app like [Fing](https://www.fing.com/products/fing-app)*
 
 ## Usage
+To start with, you'll need to assign a song to an RFID card. The URI information to access the song is stored on the RFID card, so you should be able to use one card to control multiple NodeMCUs with the same song.
+
+To programme a card:
+1. Point your web browser to `http://musicbox.local/` (see the Note in [set-up](#setup) if you can't connect to this URL from your device)
+
+2. 
+
+## RFID Cards
 
 ## References
 I used a lot of different references to build this project, and am thankful to a massive amount of online resources. Key resources I found extremely helpful included:
 - https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/ - a great reference on how RFID works, and how to combine it with an Arduino or equivalent device
-- 
--
+- https://github.com/TheNitek/RfidShelf - awesome project, working to build an RFID mp3 player in to a shelf, which might be a good solution if you don't use Sonos or Spotify
