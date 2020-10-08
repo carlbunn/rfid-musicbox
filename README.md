@@ -2,12 +2,15 @@
 
 Create an easy way for your kids (or you!) to play music through your Sonos speakers by combining the excitement of RFID, ESP8266, Spotify & Sonos.
 
+This project was built to predominantly allow my kids to play music, using simple RFID cards tapped against a reader to allow them to play the songs that they love without me being around.
+
 1. [Repository File Structure](#repository-file-structure)
 2. [Requirements](#requirements)
 3. [Hardware](#hardware)
-3. [Installation/Build](#installation-build)
-3. [Setup](#setup)
-3. [Usage](#usage)
+4. [Installation/Build](#installationbuild)
+5. [Setup](#setup)
+6. [Usage](#usage)
+7. [References](#references)
 
 ## Repository File Structure
 - /Fritzing - sketch of the wiring diagram
@@ -65,3 +68,9 @@ By this point, you should have compiled the firmware and uploaded it to the Node
 *Note: If you use an Android phone to connect to the ESP8266, you might find you have trouble connecting due to inconsistent support for mDNS in Android phones. As a workaround, try connecting using the IP address of the device which you can find using your Router or using an app like [Fing](https://www.fing.com/products/fing-app)*
 
 ## Usage
+
+## References
+I used a lot of different references to build this project, and am thankful to a massive amount of online resources. Key resources I found extremely helpful included:
+- https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/ - a great reference on how RFID works, and how to combine it with an Arduino or equivalent device
+- 
+-
