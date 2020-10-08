@@ -71,10 +71,21 @@ By this point, you should have compiled the firmware and uploaded it to the Node
 ## Usage
 To start with, you'll need to assign a song to an RFID card. The URI information to access the song is stored on the RFID card, so you should be able to use one card to control multiple NodeMCUs with the same song.
 
-To programme a card:
+To programme a card with a song:
 1. Point your web browser to `http://musicbox.local/` (see the Note in [set-up](#setup) if you can't connect to this URL from your device)
-
-2. 
+![rfid-musicbox-home-screen](images/home_screen.jpg)
+2. Select `Play Item` from the `Option` menu
+![rfid-musicbox-home-menu](images/home_menu.jpg)
+3. Click on the `Open Spotify Web Player` link to open a new browser page to the Spotify web player
+![rfid-musicbox-home-spotify](images/home_spotify.jpg)
+4. Search for the song you wish to write to the card in the Spotify web player
+5. Hover over the selected song and click on the 3 dots ![rfid-musicbox-dots](images/dots.jpg) towards the right to open the menu
+6. Select `Copy Song Link` to copy the link to the song to your clipboard
+![rfid-musicbox-spotify](images/spotify.jpg)
+7. Close the window/navigate back to the browser page for the NodeMCU
+8. Copy the song URL in to the `Playback URL` box
+9. Click on `Write to Card`. You have 10 seconds to hold the RFID card you want to programme against the RFID reader/writer.
+![rfid-musicbox-home-write](images/home_write.jpg)
 
 ## RFID Cards
 
