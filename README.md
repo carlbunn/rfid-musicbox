@@ -2,9 +2,12 @@
 
 Create an easy way for your kids (or you!) to play music through your Sonos speakers by combining the excitement of RFID, ESP8266, Spotify & Sonos.
 
-1. [Repository File Structure](#requirements)
+1. [Repository File Structure](#repository-file-structure)
 2. [Requirements](#requirements)
-3. [Repository File Structure](#requirements)
+3. [Hardware](#hardware)
+3. [Installation/Build](#installation-build)
+3. [Setup](#setup)
+3. [Usage](#usage)
 
 ## Repository File Structure
 - /Fritzing - sketch of the wiring diagram
