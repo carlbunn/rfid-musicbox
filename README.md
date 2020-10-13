@@ -10,8 +10,8 @@ This project was built to predominantly allow my kids to play music, using simpl
 2. [Requirements](#requirements)
 3. [ELectronics](#electronics)
 4. [Software Build & Installation](#software-build--installation)
-5. [Physical Installation](#physcial-installation)
-6. [Setup](#setup)
+5. [Setup](#setup)
+6. [Physical Installation](#physcial-installation)
 7. [Usage](#usage)
 8. [RFID Cards](#rfid-cards)
 9. [References](#references)
@@ -61,6 +61,16 @@ If you just want to install Platform IO to run on the command line:
 
 By this point, you should have compiled the firmware and uploaded it to the NodeMCU.
 
+## Setup
+1. After the firmware is uploaded and installed, look for a new wifi hotspot named `musicbox_setup` using your phone or computer
+2. Connect your device to the wifi hotspot, using the password `musicbox_setup`
+3. The hotspot should automatically connect you using a captive portal style web page, otherwise just point your browser to the IP `http://192.168.4.1/`
+4. Enter the details of/select your home Wifi network (along with network password) in the provided form, then click save
+5. The rfid-musicbox should now try to connect to your home Wifi network
+6. After a few seconds (/minutes) try to connect to `http://musicbox.local/` using your browser
+
+*Note: If you use an Android phone to connect to the ESP8266, you might find you have trouble connecting due to inconsistent support for mDNS in Android phones. As a workaround, try connecting using the IP address of the device which you can find using your Router or using an app like [Fing](https://www.fing.com/products/fing-app)*
+
 ## Physcial Installation
 I needed something that ensured the project box and electronics were all kept out of reach of my kids, and that they only had access to scan cards against a surface. Thankfully I had some Ikea cabinets installed under my TV that also happen to be directly underneath my loungeroom Sonos PLAYBAR.
 
@@ -71,16 +81,6 @@ The Ikea cabinets are standard [Besta cabinets](https://www.ikea.com/au/en/p/bes
 You can see from the images that I ended up running some simple trunking across the back of the door to house the USB power cable, and this runs to an extension within the cabinet.
 
 I also printed out and stuck to the door a small music icon, just as a visual reference for the kids to know where to tap the RFID card. The icon was simply printed on A4, and stuck to the cabinet using [clear film](https://www.officeworks.com.au/shop/officeworks/p/studymate-self-adhesive-book-cover-roll-450mm-x-5m-clear-sm5450) (the kind you use to put over books to protect them)
-
-## Setup
-1. After the firmware is uploaded and installed, look for a new wifi hotspot named `musicbox_setup` using your phone or computer
-2. Connect your device to the wifi hotspot, using the password `musicbox_setup`
-3. The hotspot should automatically connect you using a captive portal style web page, otherwise just point your browser to the IP `http://192.168.4.1/`
-4. Enter the details of/select your home Wifi network (along with network password) in the provided form, then click save
-5. The rfid-musicbox should now try to connect to your home Wifi network
-6. After a few seconds (/minutes) try to connect to `http://musicbox.local/` using your browser
-
-*Note: If you use an Android phone to connect to the ESP8266, you might find you have trouble connecting due to inconsistent support for mDNS in Android phones. As a workaround, try connecting using the IP address of the device which you can find using your Router or using an app like [Fing](https://www.fing.com/products/fing-app)*
 
 ## Usage
 To start with, you'll need to assign a song to an RFID card. The URI information to access the song is stored on the RFID card, so you should be able to use one card to control multiple NodeMCUs with the same song.
