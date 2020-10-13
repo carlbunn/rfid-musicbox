@@ -7,8 +7,8 @@ This project was built to predominantly allow my kids to play music, using simpl
 1. [Repository File Structure](#repository-file-structure)
 2. [Requirements](#requirements)
 3. [ELectronics](#electronics)
-4. [Software Build & Installation](#installationbuild)
-5. [Physical Installation](#physcialinstallation)
+4. [Software Build & Installation](#software-build--installation)
+5. [Physical Installation](#physcial-installation)
 6. [Setup](#setup)
 7. [Usage](#usage)
 8. [RFID Cards](#rfid-cards)
@@ -60,6 +60,11 @@ If you just want to install Platform IO to run on the command line:
 By this point, you should have compiled the firmware and uploaded it to the NodeMCU.
 
 ## Physcial Installation
+I needed something that ensured the project box and electronics were all kept out of reach of my kids, and that they only had access to scan cards against a surface. Thankfully I had some Ikea cabinets installed under my TV that also happen to be directly underneath my loungeroom Sonos PLAYBAR.
+
+![rfid-musicbox-install-back](images/install_back.jpg) ![rfid-musicbox-install-top](images/install_top.jpg)
+
+The Ikea cabinets are standard [Besta cabinets](https://www.ikea.com/au/en/p/besta-tv-bench-with-doors-white-lappviken-white-s19299137/) with doors that are approximately 17mm thick, and the RFID signal has no problem passing through them.
 
 ## Setup
 1. After the firmware is uploaded and installed, look for a new wifi hotspot named `musicbox_setup` using your phone or computer
