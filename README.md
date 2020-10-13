@@ -102,7 +102,7 @@ You can 'programme' an RFID card to start 1 of 4 different actions:
 2. Set Audio Destination - change which Sonos speaker plays the next song
 3. Stop/Pause Playback - pause/stop playback through the currently selected speaker
 4. Lock System - lock and unlock the system from reading RFID cards (except a Lock card)
-- Note: 'locking' the system doesn't persist over reboots, so if the power is lost then the device will be unlocked again
+   - Note: 'locking' the system doesn't persist over reboots, so if the power is lost then the device will be unlocked again
 
 All of this is done through the web interface.
 
