@@ -2,6 +2,8 @@
 
 Create an easy way for your kids (or you!) to play music through your Sonos speakers by combining the excitement of RFID, ESP8266, Spotify & Sonos.
 
+![rfid-musicbox-install-usage](images/install_usage.jpg) 
+
 This project was built to predominantly allow my kids to play music, using simple RFID cards tapped against a reader to allow them to play the songs that they love without me being around.
 
 1. [Repository File Structure](#repository-file-structure)
@@ -62,9 +64,11 @@ By this point, you should have compiled the firmware and uploaded it to the Node
 ## Physcial Installation
 I needed something that ensured the project box and electronics were all kept out of reach of my kids, and that they only had access to scan cards against a surface. Thankfully I had some Ikea cabinets installed under my TV that also happen to be directly underneath my loungeroom Sonos PLAYBAR.
 
-![rfid-musicbox-install-back](images/install_back.jpg) ![rfid-musicbox-install-top](images/install_top.jpg)
-
 The Ikea cabinets are standard [Besta cabinets](https://www.ikea.com/au/en/p/besta-tv-bench-with-doors-white-lappviken-white-s19299137/) with doors that are approximately 17mm thick, and the RFID signal has no problem passing through them.
+
+![rfid-musicbox-install-back](images/install_back.jpg) ![rfid-musicbox-install-top](images/install_top.jpg) ![rfid-musicbox-install-door-open](images/install_door_open.jpg)
+
+You can see from the images that I ended up running some simple trunking across the back of the door to house the USB power cable, and this runs to an extension within the cabinet.
 
 ## Setup
 1. After the firmware is uploaded and installed, look for a new wifi hotspot named `musicbox_setup` using your phone or computer
