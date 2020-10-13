@@ -6,12 +6,13 @@ This project was built to predominantly allow my kids to play music, using simpl
 
 1. [Repository File Structure](#repository-file-structure)
 2. [Requirements](#requirements)
-3. [Hardware](#hardware)
-4. [Installation/Build](#installationbuild)
-5. [Setup](#setup)
-6. [Usage](#usage)
-7. [RFID Cards](#rfid-cards)
-7. [References](#references)
+3. [ELectronics](#electronics)
+4. [Software Build & Installation](#installationbuild)
+5. [Physical Installation](#physcialinstallation)
+6. [Setup](#setup)
+7. [Usage](#usage)
+8. [RFID Cards](#rfid-cards)
+9. [References](#references)
 
 ## Repository File Structure
 - /Fritzing - sketch of the wiring diagram
@@ -33,14 +34,14 @@ There are a few additional items I purchased for my particular set-up:
 1. Something to put the assembled electronics in to. I used a simple plastic project box from a local electronics supplier.
 2. A Micro USB 5Pin Male to Female w/Screw Hole Panel. I used this to put a female USB plug on the outside of the project box, and make it easier to unplug/move as needed.
 
-## Hardware
+## Electronics
 To start with, you'll need to connect the electronics as shown below, or detailed in the [Fritzing wiring diagram](Fritzing/RFID-Musicbox.fzz).
 
 ![rfid-musicbox-Fritzing](images/fritzing.png)
 
 Once connected, connect the Micro USB cable and power supply to the NodeMCU board.
 
-## Installation/Build
+## Software Build & Installation
 The source code for this project was originally written uisng VS Code, and compiled using the [Platform IO](https://platformio.org/) plugin. If you'd prefer to use the Arduino IDE, a quick Google search should show you how to (relatively) easily adapt the source files to work as an .ino format.
 
 *Note: Before you start the below steps, make sure your NodeMCU/ESP8266 board is connected to and powered by the USB port of your computer, not to the USB Power Supply.*
@@ -57,6 +58,8 @@ If you just want to install Platform IO to run on the command line:
 4. Run `platformio run --target upload`
 
 By this point, you should have compiled the firmware and uploaded it to the NodeMCU.
+
+## Physcial Installation
 
 ## Setup
 1. After the firmware is uploaded and installed, look for a new wifi hotspot named `musicbox_setup` using your phone or computer
@@ -97,6 +100,18 @@ To programme a card with a song:
 ![rfid-musicbox-home-write](images/home_write.jpg)
 
 ## RFID Cards
+You can 'programme' an RFID card to start 1 of 4 different actions:
+1. Play Item - play a song through the currently selected speaker
+2. Set Audio Destination - change which Sonos speaker plays the next song
+3. Stop/Pause Playback - pause/stop playback through the currently selected speaker
+4. Lock System - lock and unlock the system from reading RFID cards (except a Lock card)
+   - Note: 'locking' the system doesn't persist over reboots, so if the power is lost then the device will be unlocked again
+
+All of this is done through the web interface.
+
+To make the cards be easy to use for the kids, I used some colourful images sourced online that closely reflect the song title. These were printed out (using a standard printer), cut out, stuck to the cards using a spot of glue, and finally laminated to make them more durable. They work fantastically, and after a year are still looking like new.
+
+I can't share the images I used, but I've included a [template file](images/card_template.afphoto) that you can use to size your images correctly for printing out.
 
 ## References
 I used a lot of different references to build this project, and am thankful to a massive amount of online resources. Key resources I found extremely helpful included:
