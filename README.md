@@ -30,8 +30,8 @@ This project should be extendable to additional music services, but was built to
 7. 1 x Micro USB cable, and 1 USB Power Supply - I don't think the power requirements of the NodeMCU are that great, but your smartphone power supply will easily do
 
 There are a few additional items I purchased for my particular set-up:
-8. Something to put the assembled electronics in to. I used a simple plastic project box from a local electronics supplier.
-9. A Micro USB 5Pin Male to Female w/Screw Hole Panel. I used this to put a female USB plug on the outside of the project box, and make it easier to unplug/move as needed.
+1. Something to put the assembled electronics in to. I used a simple plastic project box from a local electronics supplier.
+2. A Micro USB 5Pin Male to Female w/Screw Hole Panel. I used this to put a female USB plug on the outside of the project box, and make it easier to unplug/move as needed.
 
 ## Hardware
 To start with, you'll need to connect the electronics as shown below, or detailed in the [Fritzing wiring diagram](Fritzing/RFID-Musicbox.fzz).
