@@ -97,6 +97,17 @@ To programme a card with a song:
 ![rfid-musicbox-home-write](images/home_write.jpg)
 
 ## RFID Cards
+You can 'programme' an RFID card to start 1 of 4 different actions:
+1. Play Item - play a song through the currently selected speaker
+2. Set Audio Destination - change which Sonos speaker plays the next song
+3. Stop/Pause Playback - pause/stop playback through the currently selected speaker
+4. Lock System - lock and unlock the system from reading RFID cards (except a Lock card)
+
+All of this is done through the web interface.
+
+To make the cards be easy to use for the kids, I used some colourful images sourced online that closely reflect the song title. These were printed out (using a standard printer), cut out, stuck to the cards using a spot of glue, and finally laminated to make them more durable. They work fantastically, and after a year are still looking like new.
+
+I can't share the images I used, but I've included a [template file](images/card_template.afphoto) that you can use to size your images correctly for printing out.
 
 ## References
 I used a lot of different references to build this project, and am thankful to a massive amount of online resources. Key resources I found extremely helpful included:
