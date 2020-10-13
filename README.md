@@ -70,6 +70,8 @@ The Ikea cabinets are standard [Besta cabinets](https://www.ikea.com/au/en/p/bes
 
 You can see from the images that I ended up running some simple trunking across the back of the door to house the USB power cable, and this runs to an extension within the cabinet.
 
+I also printed out and stuck to the door a small music icon, just as a visual reference for the kids to know where to tap the RFID card. The icon was simply printed on A4, and stuck to the cabinet using [clear film](https://www.officeworks.com.au/shop/officeworks/p/studymate-self-adhesive-book-cover-roll-450mm-x-5m-clear-sm5450) (the kind you use to put over books to protect them)
+
 ## Setup
 1. After the firmware is uploaded and installed, look for a new wifi hotspot named `musicbox_setup` using your phone or computer
 2. Connect your device to the wifi hotspot, using the password `musicbox_setup`
